@@ -11,7 +11,7 @@ export default function Bio() {
       <Head>
         <title>Praveen Suhag - Bio</title>
         <meta name="description" content="Praveen Suhag's Bio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <Navbar />

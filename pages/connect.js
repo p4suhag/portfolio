@@ -11,7 +11,7 @@ export default function Connect() {
       <Head>
         <title>Praveen Suhag - Connect</title>
         <meta name="description" content="Praveen Suhag's Contact" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <Navbar />

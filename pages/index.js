@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Praveen Suhag</title>
         <meta name="description" content="Praveen Suhag's Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <Navbar />
