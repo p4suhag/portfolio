@@ -9,6 +9,11 @@ import Footer from '../components/footer';
 export default function Bio() {
   function test(e) {
     var item_number = e.target.attributes['data-number'].value;
+    var parent_elem = e.target.parentElement.parentElement;
+    var faces_items = document.getElementsByClassName('faces');
+    for (var i = faces_items.length - 1; i >= 0; i--) {
+      faces_items[i].classList.remove("thumbnail_active");
+    }
     var testimony = {
       1: {
         name: 'Jennie Ruby Jane',
@@ -40,8 +45,10 @@ export default function Bio() {
     document.getElementById("testimony_content_name").innerHTML = testimony[item_number].name;
     document.getElementById("testimony_content_role").innerHTML = testimony[item_number].role;
     document.getElementById("testimony_content_body").innerHTML = testimony[item_number].body;
+    parent_elem.classList.add("thumbnail_active");
 
-    console.log(testimony[item_number].name);
+    
+    // console.log(faces_items);
   }
   return (
     <div className="container bio_page">
