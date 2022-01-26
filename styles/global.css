@@ -109,20 +109,38 @@ h1, h2, h3, h4, h5 {
 
 .back_home {
 	float: left;
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 4px;
-    align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 4px;
+  align-items: center;
 }
 
 .back_home p {
 	margin: 0;
 }
 
+.nav_back_icon {
+	height: 24px;
+	width: 24px;
+	position: relative;
+	filter: grayscale(100%);
+	transition: left 0.2s ease-in-out;
+}
+
 .hide {
 	display: none;
 }
 
+.back_home:hover {
+	cursor: pointer;
+}
+.back_home:hover p {
+	color: var(--primary);
+}
+.back_home:hover .nav_back_icon {
+	filter: grayscale(0);
+	left: -3px;
+}
 
 
 /*---- Footer Style ----*/

@@ -1,11 +1,48 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import Script from 'next/script'
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 
 export default function Bio() {
+  function test(e) {
+    var item_number = e.target.attributes['data-number'].value;
+    var testimony = {
+      1: {
+        name: 'Jennie Ruby Jane',
+        role: 'Design Lead at Gojek',
+        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.'
+      },
+      2: {
+        name: 'Roy Hemsworth',
+        role: 'Design Manager at Gojek',
+        body: 'Praveen Suhag is an illustrator who thinks like a computer, who works with machine-like precision but with the heart of a human being. She’s living in the modern world, using what her hands do best and making this wonderful synthesis, a precise blend.'
+      },
+      3: {
+        name: 'William Stark',
+        role: 'Product Manager at Gojek',
+        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.'
+      },
+      4: {
+        name: 'Tara Chandra',
+        role: 'Engineering Manager at Gojek',
+        body: 'Praveen Suhag is an illustrator who thinks like a computer, who works with machine-like precision but with the heart of a human being. She’s living in the modern world, using what her hands do best and making this wonderful synthesis, a precise blend.'
+      },
+      5: {
+        name: 'Vidya Mandir',
+        role: 'Engineering at Gojek',
+        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.'
+      }
+    }
+
+    document.getElementById("testimony_content_name").innerHTML = testimony[item_number].name;
+    document.getElementById("testimony_content_role").innerHTML = testimony[item_number].role;
+    document.getElementById("testimony_content_body").innerHTML = testimony[item_number].body;
+
+    console.log(testimony[item_number].name);
+  }
   return (
     <div className="container bio_page">
       <Head>
@@ -39,24 +76,32 @@ export default function Bio() {
       <div className="testimony">
         <h4>What others say</h4>
         <div className="testimony_thumbnails">
-          <div className="faces thumbnail_active"><Image src="/testimony/face1.png" height={40} width={40} className="custom_face" /></div>
-          <div className="faces"><Image src="/testimony/face2.png" height={40} width={40} className="custom_face" /></div>
-          <div className="faces"><Image src="/testimony/face3.png" height={40} width={40} className="custom_face" /></div>
-          <div className="faces"><Image src="/testimony/face4.png" height={40} width={40} className="custom_face" /></div>
-          <div className="faces"><Image src="/testimony/face5.png" height={40} width={40} className="custom_face" /></div>
+          <div className="faces thumbnail_active" onClick={test}><Image src="/testimony/face1.png" height={40} width={40} className="custom_face" data-number="1"/></div>
+          <div className="faces" onClick={test}><Image src="/testimony/face2.png" height={40} width={40} className="custom_face" data-number="2"/></div>
+          <div className="faces" onClick={test}><Image src="/testimony/face3.png" height={40} width={40} className="custom_face" data-number="3"/></div>
+          <div className="faces" onClick={test}><Image src="/testimony/face4.png" height={40} width={40} className="custom_face" data-number="4"/></div>
+          <div className="faces" onClick={test}><Image src="/testimony/face5.png" height={40} width={40} className="custom_face" data-number="5"/></div>
         </div>
         <div className="testimony_content">
           <div className="testimony_content_header">
             <div className="testimony_content_face"><Image src="/testimony/face1.png" height={80} width={80} className="testimony_content_face_custom" /></div>
             <div>
-              <p className="testimony_content_name">Jennie Ruby Jane</p>
-              <p className="testimony_content_role">Design Lead at Gojek</p>
+              <p className="testimony_content_name" id="testimony_content_name">Jennie Ruby Jane</p>
+              <p className="testimony_content_role" id="testimony_content_role">Design Lead at Gojek</p>
             </div>
           </div>
-          <p className="testimony_content_body">If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.</p>
+          <p className="testimony_content_body" id="testimony_content_body">If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.</p>
         </div>
       </div>
       <Footer />
+      <Script>
+        {`
+          function changeTestimony() {
+            console.log('hello')
+          }
+        `}
+      </Script>
+      
     </div>
   )
 }

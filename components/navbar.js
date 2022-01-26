@@ -10,7 +10,7 @@ export default function Navbar() {
       <p className={router.pathname == "/case/litmus" ? "navbar_logo hide" : "navbar_logo"}>Praveen Suhag</p>
       <Link href="/">
         <div className={router.pathname == "/case/litmus" ? "back_home" : "back_home hide"}>
-          <Image src="/back_arrow.svg" width={24} height={24} />
+          <div className="nav_back_icon"><Image src="/back_arrow.svg" width={24} height={24} /></div>
           <p>Back Home</p>
         </div>
       </Link>
