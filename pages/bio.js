@@ -16,18 +16,20 @@ export default function Bio() {
 
       <Navbar />
       <div className="bio_headline">
-        <h1>Designer / Tinkerer / Absurdist</h1>
+        <h1>Designer / Developer / Dendrophile</h1>
         <p>Namaste! I am <span>Praveen Suhag.</span></p>
       </div>
       <div className="bio">
         <div className="bio_content">
-          <p>I’m a <span>product designer</span> creating thoughtful experiences which are simple and delightful.</p>
-          <p>I am from a small town in <span>India,</span> with a background in electronic engineering. After graduation I started my career as a freelance <span>front-end developer</span> for a year and then somehow evolved into a designer.</p>
-          <p>In 2017, I started my full time role as a <span>motion designer</span> at <span>Gojek</span> with the responsibility to evolve motion & prototyping at the organisation.</p>
-          <p>After leading motion design for 2 years, my curious soul and challenges data engineering team at Gojek had on their plate inspired me to explore new dimensions.</p>
-          <p>Since then, I am <span>leading data experience team</span> at Gojek to build user-centric data products.</p>
-          <p>After leading motion design for 2 years, my curious soul and challenges data engineering team at Gojek had on their plate inspired me to explore new dimensions.</p>
-          <p>In 2017, I started my full time role as a <span>motion designer</span> at <span>Gojek</span> with the responsibility to evolve motion & prototyping at the organisation.</p>
+          <p>I’m a <span>product designer</span> creating lucid, pragmatic, and delightful user experiences.</p>
+          <p>Design is, for me, an <span>‘intention’</span> to achieve a unique expectation.</p>
+          <p>I grew up in a small town in <span>India</span> surrounded by farmland, largely exploring the outdoors and gaining free-ranging insights about nature. This profound affinity developed a <span>creative expression</span> in me providing a sense of identity and belonging within the grand world of existence. Driven by the imagination of a creative world, I was drawn to make connections between facts and possibilities, thereby pursuing an <span>engineering degree.</span></p>
+          <p>After graduation, I set out my career as a freelance <span>front-end developer,</span> simultaneously evolving as a designer by crafting product experiences.</p>
+          <p>In 2017, I joined <span>Gojek,</span> Indonesia’s largest hyper-local company, with the responsibility to <span>lead motion and prototyping</span> for 20+ products serving millions of customers across Transport, Food, Payments, and Entertainment. This role involved building a team from ground up, laying its foundation and principles.</p>
+          <p>Equipped with complementing skills of interface design, motion design, and technology, I was approached to solve the unique challenges of building a large-scale data platform within Gojek, in 2019. Since then, I am <span>leading the data experience team</span> to design Enterprise, Experimentation, Analytics, and Customer data platforms. These platforms empower the Gojek workforce to make data-driven decisions.</p>
+          
+          <p>It’s been a stellar ride so far, and I’ve had the opportunity to work with some remarkable individuals. I am excited to see what lies ahead.</p>
+          
         </div>
         <div className="dp_container">
           <div className="dp"></div>
