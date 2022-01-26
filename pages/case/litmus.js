@@ -122,6 +122,103 @@ export default function Litmus() {
         </div>
       </div>
 
+      <div className="case_study_section">
+        <div className="container">
+          <div className="case_study_icons"><Image src="/efficient.svg" width={96} height={66} /></div>
+          <h3>Making it efficient</h3>
+          <p>The most important resource to our users & business was time. It was a time of the pandemic and saving man-hour was definitely helping the company to reduce the cost.</p>
+          <p>With a mindset to optimize our platform, we started with our very first feature.</p>
+          <div className="case_study_sub_section">
+            <h4>Easy Access</h4>
+            <p>Can you imagine having a chat with the customer service desk before you can even start using a product, that’s a horrible experience and that’s exactly how our product was. Users have to ask the service desk to add them to the VPN list and then every time they have to open google authenticator, connect with VPN before they can see the first screen of Litmus.</p>
+            <p>Just by talking about this experience is making me feel frustrated, that’s why the very first thing we did was to remove VPN dependency and introduced sign in with google.</p>
+            <div className="case_study_image"><Image src="/litmus/login.png" width={1040} height={790} /></div>
+          </div>
+          <div className="case_study_sub_section">
+            <h4>Access Management</h4>
+            <p>Running an experiment is a team effort & require multiple stakeholders to play their part, but Litmus only allows the experiment creator to modify or take any actions on it.</p>
+            <p>So, users started raising tickets to the service desk for such tasks & had to wait for it to resolve before they could do anything else on the experiment.</p>
+            <p>This was creating an unnecessary workload on the service desk also. It was important to give users control over their experiment, for that we designed an access management feature on Litmus.</p>
+            <p>Users can decide who can have access to their resources and what kind of actions they can perform, which gives them control and confidence.</p>
+            <div className="case_study_image"><Image src="/litmus/iam.png" width={1040} height={790} /></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="case_study_section">
+        <div className="container">
+          <div className="case_study_icons"><Image src="/inclusive.svg" width={96} height={66} /></div>
+          <h3>Making it inclusive</h3>
+          <p>Good design keeps each individual in mind and makes sure to design a solution that serves everyone. Our insights had given clear points of exclusivity in our system and that’s exactly where we shifted our focus next.</p>
+          <div className="case_study_sub_section">
+            <h4>Sample Size Calculator</h4>
+            <p>Before starting any experiment you need to know how many people experiment need to meet the desired statistical constraints. Users had their own workaround to figure that out.</p>
+            <p>This has to be centralised so that for every experiment we can confidently say sample size was calculated with a trusted method. We designed a feature for users to do that on Litmus itself.</p>
+            <div className="case_study_image"><Image src="/litmus/sample_size.png" width={1040} height={790} /></div>
+          </div>
+          <div className="case_study_sub_section">
+            <h4>Experiment Reach</h4>
+            <p>Only knowing the required sample size was not enough, once the experiment starts they need to track the reach of that experiment.</p>
+            <p>PMs or analysts regularly query the data and analyse it, that’s a repetitive and time-consuming task.</p>
+            <p>We aimed to automate this so that users can have visibility on experiment reach in real-time.</p>
+            <div className="case_study_image"><Image src="/litmus/exp_reach.png" width={1040} height={790} /></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="case_study_section">
+        <div className="container">
+          <div className="case_study_icons"><Image src="/progressive.svg" width={96} height={66} /></div>
+          <h3>Making it progressive</h3>
+          <p>The most crucial part of experimentation is the analysis and figuring out its effect. This part of the journey has huge potential of impact and waiting to be explored.</p>
+          <p>We knew working on a post-experiment use case will require huge effort but it was capable of bringing that change and helping us evolve experimentation at the organisation.</p>
+          <p>To make our product powerful and inspiring we worked on two major features.</p>
+          <div className="case_study_sub_section">
+            <h4>Experiment Analysis</h4>
+            <p>Once an experiment is finished, the product team request data analysts to analyse and create a report to know if they can make a decision statistically for their experiment.</p>
+            <p>This whole process of raising tickets, analysis and reporting take 6-10 days.</p>
+            <p>Imagine if we are able to scale experiments created at Gojek because that’s our goal, it will increase the data analyst workload also and that reporting time can go from 10 to 20 to 30 to unbearable workload in no time.</p>
+            <p>It was clear this can not be done manually and needed a solution before this problem hit us in the face and that’s exactly what we did.</p>
+            <div className="case_study_image"><Image src="/litmus/analysis.png" width={1040} height={790} /></div>
+          </div>
+          <div className="case_study_sub_section">
+            <h4>Metric Performance</h4>
+            <p>Any experiment requires analysis of multiple metrics, how they are behaving and affecting business or experiment hypothesis. This was another piece that was done manually with analysts dependency.</p>
+            <p>We designed a solution to automate this so that users can have a real-time view of the metrics performance.</p>
+            <div className="case_study_image"><Image src="/litmus/metric_perf.png" width={1040} height={790} /></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="case_study_section">
+        <div className="container">
+          <div className="case_study_icons"><Image src="/useful.svg" width={96} height={66} /></div>
+          <h3>Making it simple & useful</h3>
+          <p>A product should satisfy users needs and function in a way users expect it to. It should help users in achieving their goals and eliminate all unnecessary elements from the system. It should be self-explanatory and at the same time aesthetically pleasing.</p>
+          <div className="case_study_sub_section">
+            <h4>Segmentation Rules</h4>
+            <p>It’s very important that the product is obvious in nature and users can easily perform tasks without any anxiety or friction.</p>
+            <p>Defining segmentation rules in Litmus was a real pain, they have to go through the documentation to learn the syntax and what all they add in there.</p>
+            <p>To make it even worse our system didn’t even provide error validation.</p>
+            <p>We simplify the experience so that this burden can be removed from users shoulders and the system can take care of it.</p>
+            <div className="case_study_image"><Image src="/litmus/rules.png" width={1040} height={790} /></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="case_study_section">
+        <div className="container">
+          <div className="case_study_icons"><Image src="/impact.svg" width={96} height={66} /></div>
+          <h3>Impact</h3>
+          <p>We noticed positive results with the above solutions in terms of quantitative and qualitative data. We started getting lots of feedback & feature requests from product groups to help them with running experiments.</p>
+          <ul>
+            <li>Increased CSAT score by 30% & NPS by 20%</li>
+            <li>Saved 40k hours on experiment analysis in 6 months.</li>
+            <li>Monthly Active Experiment increased by 32%.</li>
+          </ul>
+        </div>
+      </div>
+
       <div className="container">
         <Footer />
       </div>
