@@ -28,7 +28,7 @@ export default function Home() {
             <Link href="/case/litmus">
               <span className="case_study_button">
                 <p>Open Case Study</p>
-                <Image src="/forward_arrow.svg" width={24} height={24}/>
+                <div className="case_study_button_icon"><Image src="/forward_arrow.svg" width={24} height={24}/></div>
               </span>
             </Link>
           </div>
@@ -44,7 +44,7 @@ export default function Home() {
             <Link href="/case/cosmos">
               <span className="case_study_button">
                 <p>Open Case Study</p>
-                <Image src="/forward_arrow.svg" width={24} height={24}/>
+                <div className="case_study_button_icon"><Image src="/forward_arrow.svg" width={24} height={24}/></div>
               </span>
             </Link>
           </div>
@@ -60,7 +60,7 @@ export default function Home() {
             <Link href="/case/console">
               <span className="case_study_button">
                 <p>Open Case Study</p>
-                <Image src="/forward_arrow.svg" width={24} height={24}/>
+                <div className="case_study_button_icon"><Image src="/forward_arrow.svg" width={24} height={24}/></div>
               </span>
             </Link>
           </div>
