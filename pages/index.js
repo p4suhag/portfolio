@@ -25,7 +25,7 @@ export default function Home() {
           <div className="project_tile_content">
             <h2>Litmus</h2>
             <p>Litmus is an experimentation platform designed to solve use case of running experiments across Gojek.</p>
-            <Link href="/litmus">
+            <Link href="/case/litmus">
               <span className="case_study_button">
                 <p>Open Case Study</p>
                 <Image src="/forward_arrow.svg" width={24} height={24}/>
@@ -41,7 +41,7 @@ export default function Home() {
           <div className="project_tile_content">
             <h2>Cosmos</h2>
             <p>Cosmos is a platform designed to solve metrics and analytics related use cases.</p>
-            <Link href="/cosmos">
+            <Link href="/case/cosmos">
               <span className="case_study_button">
                 <p>Open Case Study</p>
                 <Image src="/forward_arrow.svg" width={24} height={24}/>
@@ -57,7 +57,7 @@ export default function Home() {
           <div className="project_tile_content">
             <h2>Console</h2>
             <p>Data Console is a platform designed to solve all data needs across Gojek and make it self serve for everyone.</p>
-            <Link href="/console">
+            <Link href="/case/console">
               <span className="case_study_button">
                 <p>Open Case Study</p>
                 <Image src="/forward_arrow.svg" width={24} height={24}/>

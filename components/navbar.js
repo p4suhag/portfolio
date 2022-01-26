@@ -7,9 +7,9 @@ export default function Navbar() {
   const router = useRouter();
   return (
     <div className="navbar">
-      <p className={router.pathname == "/litmus" ? "navbar_logo hide" : "navbar_logo"}>Praveen Suhag</p>
+      <p className={router.pathname == "/case/litmus" ? "navbar_logo hide" : "navbar_logo"}>Praveen Suhag</p>
       <Link href="/">
-        <div className={router.pathname == "/litmus" ? "back_home" : "back_home hide"}>
+        <div className={router.pathname == "/case/litmus" ? "back_home" : "back_home hide"}>
           <Image src="/back_arrow.svg" width={24} height={24} />
           <p>Back Home</p>
         </div>

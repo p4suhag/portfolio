@@ -18,6 +18,10 @@ body {
 	color: var(--on_background);
 }
 
+* {
+	box-sizing: border-box;
+}
+
 a {
 	text-decoration: none;
 	color: var(--on_background);
@@ -28,9 +32,13 @@ a:hover {
 }
 
 
-p {
+p, li {
 	font-size: 22px;
 	line-height: 36px;
+	margin: 0 0 24px 0;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	color: var(--on_background);
 }
 
 h1 {
@@ -57,11 +65,15 @@ h4 {
 	font-weight: 700;
 }
 
+h1, h2, h3, h4, h5 {
+	margin: 16px 0;
+}
+
 .container {
   max-width: 1040px;
   margin: 0 auto;
   padding: 0;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
 
 
@@ -193,6 +205,10 @@ h4 {
 
 .project_tile_content {
 	width: 336px;
+}
+
+.project_tile_content h2 {
+	margin-bottom: 8px;
 }
 
 .project_tile p {
@@ -430,6 +446,103 @@ h4 {
 	font-weight: 400;
 	margin: 8px 0;
 }
+
+
+
+/*--- Litmus Case Study ---*/
+
+.case_study p {
+	max-width: 900px;
+}
+
+.case_study span {
+	color: var(--primary);
+}
+
+.case_study_section {
+	margin-bottom: 160px;
+}
+
+.case_study_section a {
+	color: var(--primary);
+}
+
+.case_study_sub_section {
+	margin-top: 120px;
+}
+
+.highlight {
+	font-size: 28px;
+	line-height: 46px;
+	letter-spacing: 0.5px;
+	color: var(--outline);
+	margin: 40px 0;
+}
+
+.cover_image {
+	height: 720px;
+	width: 90%;
+    max-width: 1280px;
+    margin: 48px auto 0 auto;
+    position: relative;
+}
+.cover_image_front {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cover_image_back {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.case_study_image {
+	margin: 48px auto 0 auto;
+}
+
+
+.case_study_info {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+
+.case_study_info_cell {
+	width: 320px;
+}
+
+.case_study_info_cell p:nth-of-type(1) {
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.case_study_info_cell p:nth-of-type(2) {
+	margin-bottom: 56px;
+}
+
+
+.litmus_journey {
+	width: 100%;
+	text-align: center;
+}
+
+.pain_points {
+	margin-top: 48px;
+}
+.pain_points .case_study_info_cell {
+	width: 460px;
+}
+
+.pain_points .case_study_info_cell p:nth-of-type(2) {
+	margin-bottom: 48px;
+}
+
+
+
+
+
+
 
 
 
