@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 
 
 export default function Bio() {
-  function test(e) {
+  function changeTestimony(e) {
     var item_number = e.target.attributes['data-number'].value;
     var parent_elem = e.target.parentElement.parentElement;
     var faces_items = document.getElementsByClassName('faces');
@@ -55,7 +55,6 @@ export default function Bio() {
 
     document.getElementById("testimony_content_face_custom").src = testimony[item_number].img;
     
-    // console.log(document.getElementById("testimony_content_face_custom"));
   }
 
 
@@ -92,11 +91,11 @@ export default function Bio() {
       <div className="testimony">
         <h4>What others say</h4>
         <div className="testimony_thumbnails">
-          <div className="faces thumbnail_active" onClick={test}><Image src="/testimony/face1.png" height={40} width={40} className="custom_face" data-number="1"/></div>
-          <div className="faces" onClick={test}><Image src="/testimony/face2.png" height={40} width={40} className="custom_face" data-number="2"/></div>
-          <div className="faces" onClick={test}><Image src="/testimony/face3.png" height={40} width={40} className="custom_face" data-number="3"/></div>
-          <div className="faces" onClick={test}><Image src="/testimony/face4.png" height={40} width={40} className="custom_face" data-number="4"/></div>
-          <div className="faces" onClick={test}><Image src="/testimony/face5.png" height={40} width={40} className="custom_face" data-number="5"/></div>
+          <div className="faces thumbnail_active" onClick={changeTestimony}><Image src="/testimony/face1.png" height={40} width={40} className="custom_face" data-number="1"/></div>
+          <div className="faces" onClick={changeTestimony}><Image src="/testimony/face2.png" height={40} width={40} className="custom_face" data-number="2"/></div>
+          <div className="faces" onClick={changeTestimony}><Image src="/testimony/face3.png" height={40} width={40} className="custom_face" data-number="3"/></div>
+          <div className="faces" onClick={changeTestimony}><Image src="/testimony/face4.png" height={40} width={40} className="custom_face" data-number="4"/></div>
+          <div className="faces" onClick={changeTestimony}><Image src="/testimony/face5.png" height={40} width={40} className="custom_face" data-number="5"/></div>
         </div>
         <div className="testimony_content">
           <div className="testimony_content_header">
