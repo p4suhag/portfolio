@@ -18,38 +18,47 @@ export default function Bio() {
       1: {
         name: 'Jennie Ruby Jane',
         role: 'Design Lead at Gojek',
-        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.'
+        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.',
+        img: '/testimony/face1.png'
       },
       2: {
         name: 'Roy Hemsworth',
         role: 'Design Manager at Gojek',
-        body: 'Praveen Suhag is an illustrator who thinks like a computer, who works with machine-like precision but with the heart of a human being. She’s living in the modern world, using what her hands do best and making this wonderful synthesis, a precise blend.'
+        body: 'Praveen Suhag is an illustrator who thinks like a computer, who works with machine-like precision but with the heart of a human being. She’s living in the modern world, using what her hands do best and making this wonderful synthesis, a precise blend.',
+        img: '/testimony/face2.png'
       },
       3: {
         name: 'William Stark',
         role: 'Product Manager at Gojek',
-        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.'
+        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.',
+        img: '/testimony/face3.png'
       },
       4: {
         name: 'Tara Chandra',
         role: 'Engineering Manager at Gojek',
-        body: 'Praveen Suhag is an illustrator who thinks like a computer, who works with machine-like precision but with the heart of a human being. She’s living in the modern world, using what her hands do best and making this wonderful synthesis, a precise blend.'
+        body: 'Praveen Suhag is an illustrator who thinks like a computer, who works with machine-like precision but with the heart of a human being. She’s living in the modern world, using what her hands do best and making this wonderful synthesis, a precise blend.',
+        img: '/testimony/face4.png'
       },
       5: {
         name: 'Vidya Mandir',
         role: 'Engineering at Gojek',
-        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.'
+        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.',
+        img: '/testimony/face5.png'
       }
     }
+
 
     document.getElementById("testimony_content_name").innerHTML = testimony[item_number].name;
     document.getElementById("testimony_content_role").innerHTML = testimony[item_number].role;
     document.getElementById("testimony_content_body").innerHTML = testimony[item_number].body;
     parent_elem.classList.add("thumbnail_active");
 
+    document.getElementById("testimony_content_face_custom").src = testimony[item_number].img;
     
-    // console.log(faces_items);
+    // console.log(document.getElementById("testimony_content_face_custom"));
   }
+
+
   return (
     <div className="container bio_page">
       <Head>
@@ -91,7 +100,7 @@ export default function Bio() {
         </div>
         <div className="testimony_content">
           <div className="testimony_content_header">
-            <div className="testimony_content_face"><Image src="/testimony/face1.png" height={80} width={80} className="testimony_content_face_custom" /></div>
+            <div className="testimony_content_face"><img src="/testimony/face1.png" height={80} width={80} className="testimony_content_face_custom" id="testimony_content_face_custom" /></div>
             <div>
               <p className="testimony_content_name" id="testimony_content_name">Jennie Ruby Jane</p>
               <p className="testimony_content_role" id="testimony_content_role">Design Lead at Gojek</p>
@@ -101,13 +110,6 @@ export default function Bio() {
         </div>
       </div>
       <Footer />
-      <Script>
-        {`
-          function changeTestimony() {
-            console.log('hello')
-          }
-        `}
-      </Script>
       
     </div>
   )

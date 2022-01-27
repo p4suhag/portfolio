@@ -124,7 +124,8 @@ h1, h2, h3, h4, h5 {
 	width: 24px;
 	position: relative;
 	filter: grayscale(100%);
-	transition: left 0.2s ease-in-out;
+	left: 0;
+	transition: left 0.15s ease-in-out;
 }
 
 .hide {
@@ -188,17 +189,17 @@ h1, h2, h3, h4, h5 {
 
 .work_cover:after {
 	content: ' ';
-  	display: block;
-  	position: absolute;
-  	left: 0;
-  	top: -20px;
-  	width: 100%;
-  	height: 100%;
-  	background-image: url(/circle.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.6;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: -20px;
+	width: 100%;
+	height: 100%;
+	background-image: url(/circle.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
 }
 
 .work_title {
@@ -272,14 +273,37 @@ h1, h2, h3, h4, h5 {
 }
 
 
-
 .project_tile_image {
 	position: relative;
   left: 45%;
   top: -176px;
+  filter: drop-shadow(-2px -2px 8px rgba(255, 255, 255, 0.7));
 }
 
+.litmus_cover:before,
+.cosmos_cover:before,
+.console_cover:before {
+	content: ' ';
+  display: block;
+  position: absolute;
+  right: -160px;
+  bottom: -300px;
+  width: 850px;
+  height: 870px;
+  background-image: url(/mesh1.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transform: rotate(184deg);
+}
 
+.cosmos_cover:before {
+	filter: hue-rotate(209deg);
+}
+.console_cover:before {
+	filter: hue-rotate(346deg);
+}
 
 
 /*----- Connect Page -----*/
