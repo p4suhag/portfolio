@@ -238,6 +238,7 @@ h1, h2, h3, h4, h5 {
 
 
 .project_tile {
+	position: relative;
 	height: 480px;
 	width: 100%;
 	max-width: 1040px;
@@ -358,7 +359,9 @@ h1, h2, h3, h4, h5 {
   	position: unset;
     transform: scale(1);
   }
-  .litmus_cover:before, .cosmos_cover:before, .console_cover:before {
+  .litmus_cover:before, 
+  .cosmos_cover:before, 
+  .console_cover:before {
     bottom: -500px;
     transform: rotate(200deg);
 	}
@@ -381,11 +384,12 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 480px) {
 	.work_page:before {
-		top: 2%;
+		top: 50px;
+    height: 600px;
 	}
 	.work_title {
-		font-size: 36px;
-		line-height: 56px;
+		font-size: 32px;
+		line-height: 52px;
 	}
 	.project_tile {
 		padding: 8px 32px 0 32px;
