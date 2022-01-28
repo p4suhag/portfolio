@@ -9,7 +9,7 @@ export default function Navbar() {
     <div className="navbar">
       <p className={router.pathname.includes('/case') ? "navbar_logo hide" : "navbar_logo"}>Praveen Suhag</p>
       <Link href="/">
-        <div className={router.pathname.includes('/case') ? "back_home" : "back_home hide"} onClick={testUrl}>
+        <div className={router.pathname.includes('/case') ? "back_home" : "back_home hide"} >
           <div className="nav_back_icon"><Image src="/back_arrow.svg" width={24} height={24} /></div>
           <p>Back Home</p>
         </div>
