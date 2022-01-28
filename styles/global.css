@@ -155,6 +155,12 @@ h1, h2, h3, h4, h5 {
 	left: -3px;
 }
 
+@media (max-width: 600px) {
+	.navbar {
+		margin-bottom: 72px;
+	}
+}
+
 
 /*---- Footer Style ----*/
 
@@ -194,7 +200,8 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column;
     align-items: center;
     grid-row-gap: 40px;
-    margin-top: 160px;
+    margin-top: 128px;
+    padding-bottom: 56px;
 	}
 }
 
@@ -234,7 +241,6 @@ h1, h2, h3, h4, h5 {
 	position: relative;
 	z-index: 1;
 }
-
 
 
 .project_tile {
@@ -369,7 +375,7 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 600px) {
 	.work_cover {
-		padding: 0 56px;
+		padding: 64px 56px 0 56px;
 	}
 	.project_tile {
 		margin-bottom: 120px;
@@ -386,6 +392,7 @@ h1, h2, h3, h4, h5 {
 	.work_page:before {
 		top: 50px;
     height: 600px;
+    opacity: 0.4;
 	}
 	.work_title {
 		font-size: 32px;
@@ -417,9 +424,10 @@ h1, h2, h3, h4, h5 {
 
 .connect {
 	display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 160px;
 }
 
 .connect_content {
@@ -442,7 +450,7 @@ h1, h2, h3, h4, h5 {
 
 .connect_content .social_links {
 	justify-content: start;
-	margin-top: 112px;
+	margin-top: 80px;
 }
 
 
@@ -470,7 +478,11 @@ h1, h2, h3, h4, h5 {
 	z-index: 1;
 }
 
-
+@media (max-width: 900px) {
+	.telephone_container {
+		display: none;
+	}
+}
 
 
 /*--- Bio Page ---*/
