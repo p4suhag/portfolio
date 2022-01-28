@@ -84,7 +84,7 @@ export default function Bio() {
         </div>
         <div className="dp_container">
           <div className="dp"></div>
-        </div>  
+        </div>
       </div>
       <div className="sun"><Image src="/sun.svg" width={160} height={158} /></div>
       <div className="testimony">
