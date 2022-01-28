@@ -598,14 +598,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .faces:hover {
-	outline: 1px solid var(--primary);
+	box-shadow: 0 0 0 1pt var(--primary);
 	border: 1px solid var(--background);
 	cursor: pointer;
 }
 
 .thumbnail_active {
-	outline: 1px solid var(--primary);
-	border: 2px solid var(--background);
+	box-shadow: 0 0 0 1.5pt var(--primary);
+	border: 1px solid var(--background);
 }
 
 
