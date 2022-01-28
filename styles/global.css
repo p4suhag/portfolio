@@ -48,7 +48,7 @@ h1 {
 
 h2 {
 	font-size: 56px;
-	line-height: 78px;
+	line-height: 80px;
 	margin: 0;
 }
 
@@ -84,6 +84,14 @@ h1, h2, h3, h4, h5 {
 	h1 {
 		font-size: 32px;
     line-height: 52px;
+	}
+	h2 {
+		font-size: 50px;
+		line-height: 78px;
+	}
+	h3 {
+		font-size: 44px;
+		line-height: 70px;
 	}
 }
 
@@ -762,7 +770,60 @@ h1, h2, h3, h4, h5 {
 }
 
 
-
+@media (max-width: 1200px) {
+  .cover_image {
+  	height:  648px;
+  }
+  .cover_image_front, .cover_image_back {
+  	height: 532px;
+    width: 700px;
+  }  
+}
+@media (max-width: 1024px) {
+  .cover_image {
+  	height:  590px;
+  }
+  .cover_image_front, .cover_image_back {
+  	height: 480px;
+    width: 630px;
+  }  
+}
+@media (max-width: 900px) {
+  .cover_image {
+  	height:  500px;
+  }
+  .cover_image_front, .cover_image_back {
+  	height: 400px;
+    width: 525px;
+  }  
+}
+@media (max-width: 768px) {
+  .cover_image {
+  	height:  480px;
+  }
+  .cover_image_front, .cover_image_back {
+  	height: 320px;
+    width: 420px;
+  }  
+}
+@media (max-width: 480px) {
+  .cover_image {
+  	height:  400px;
+  }
+  .cover_image_front, .cover_image_back {
+  	height: 240px;
+    width: 315px;
+  }
+  .cover_image_back {
+  	left: 15%;
+  }
+  .case_study_section {
+  	margin-bottom: 120px;
+  }
+  .case_study_sub_section {
+  	margin-top: 80px;
+  }
+}
 
 
 
