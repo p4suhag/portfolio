@@ -230,9 +230,7 @@ h1, h2, h3, h4, h5 {
 
 .work_title {
 	text-align: center;
-	/*font-size: 48px;*/
 	font-weight: 200;
-	/*line-height: 76px;*/
 	position: relative;
 	z-index: 1;
 }
@@ -383,7 +381,11 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 480px) {
 	.work_page:before {
-		top: 6%;
+		top: 2%;
+	}
+	.work_title {
+		font-size: 36px;
+		line-height: 56px;
 	}
 	.project_tile {
 		padding: 8px 32px 0 32px;
@@ -395,17 +397,14 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 400px) {
 	.project_tile {
-		height: auto;
+		height: 500px;
 		padding: 8px 32px 8px 32px;
 		margin-bottom: 40px;
-	}
-	.project_tile_image {
-    display: none;
 	}
 	.litmus_cover:before,
 	.cosmos_cover:before,
 	.console_cover:before {
-	  display: none;
+	  bottom: -560px;
 	}
 }
 
