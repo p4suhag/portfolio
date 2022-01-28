@@ -80,9 +80,16 @@ h1, h2, h3, h4, h5 {
     margin: 0 56px;
   }
 }
+@media (max-width: 480px) {
+	h1 {
+		font-size: 32px;
+    line-height: 52px;
+	}
+}
+
 @media (max-width: 400px) {
   .container {
-    margin: 0 16px;
+    margin: 0 40px;
   }
 }
 
@@ -218,7 +225,7 @@ h1, h2, h3, h4, h5 {
 	display: block;
 	position: absolute;
 	left: calc(50% - 350px);
-  top: 4%;
+  top: 5.2%;
   width: 700px;
   height: 570px;
 	background-image: url(/circle.png);
@@ -390,13 +397,9 @@ h1, h2, h3, h4, h5 {
 
 @media (max-width: 480px) {
 	.work_page:before {
-		top: 50px;
+		top: 60px;
     height: 600px;
     opacity: 0.4;
-	}
-	.work_title {
-		font-size: 32px;
-		line-height: 52px;
 	}
 	.project_tile {
 		padding: 8px 32px 0 32px;
@@ -502,9 +505,9 @@ h1, h2, h3, h4, h5 {
 
 .bio {
 	display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .bio_content {
@@ -540,17 +543,17 @@ h1, h2, h3, h4, h5 {
 
 .dp {
 	width: 332px;
-    height: 440px;
-    background-image: url(/dp.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: revert;
-    border: 8px solid var(--white);
-    border-radius: 4px;
-    transform: scaleX(-1);
-    margin-top: 4px;
-    z-index: 1;
+  height: 440px;
+  background-image: url(/dp.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: revert;
+  border: 8px solid var(--white);
+  border-radius: 4px;
+  transform: scaleX(-1);
+  margin: 4px 0 0 24px;
+  z-index: 1;
 }
 
 
@@ -569,11 +572,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .testimony_thumbnails {
-	display: grid;
-	grid-auto-flow: column;
-	grid-column-gap: 32px;
-	justify-content: start;
-	margin-bottom: 64px;
+	display: inline-flex;
+  grid-column-gap: 32px;
+  grid-row-gap: 40px;
+  margin-bottom: 64px;
+  flex-wrap: wrap;
 }
 
 .faces {
@@ -629,7 +632,41 @@ h1, h2, h3, h4, h5 {
 	margin: 8px 0;
 }
 
+@media (max-width: 1024px) {
+  .dp {
+  	width: 240px;
+  }
+}
 
+@media (max-width: 900px) {
+	.bio {
+		flex-direction: column-reverse;
+	}
+	.dp_container {
+		width: 100%;
+	}
+	.dp {
+  	width: 100%;
+  	margin: 0 0 80px 0;
+  	background-position-y: top;
+  }
+  .bio_content {
+  	max-width: 900px;
+  }
+}
+
+@media (max-width: 480px) {
+	.bio {
+		margin-bottom: 16px;
+	}
+	.sun {
+		height: 80px;
+		width: 80px;
+	}
+	.testimony {
+		margin-top: 136px;
+	}
+}
 
 /*--- Litmus Case Study ---*/
 

@@ -81,7 +81,6 @@ export default function Bio() {
           <p>Equipped with complementing skills of interface design, motion design, and technology, I was approached to solve the unique challenges of building a large-scale data platform within Gojek, in 2019. Since then, I am <span>leading the data experience team</span> to design Enterprise, Experimentation, Analytics, and Customer data platforms. These platforms empower the Gojek workforce to make data-driven decisions.</p>
           
           <p>It’s been a stellar ride so far, and I’ve had the opportunity to work with some remarkable individuals. I am excited to see what lies ahead.</p>
-          
         </div>
         <div className="dp_container">
           <div className="dp"></div>
