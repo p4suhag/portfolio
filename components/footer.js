@@ -6,7 +6,7 @@ import SocialIcons from '../components/socialicons';
 export default function Footer() {
   return (
     <div className="footer">
-      <p>Code and pixed by Praveen Suhag</p>
+      <p>Pixel and code by Praveen Suhag</p>
       <SocialIcons />   
     </div>
   )

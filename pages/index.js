@@ -49,7 +49,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="project_tile_image">
-              <Image src="/litmus/exp_reach.png" width={640} height={486} />
+              <Image src="/cosmos/cube-schema.png" width={640} height={486} />
             </div>
           </div>
 
