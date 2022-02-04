@@ -10,12 +10,16 @@ export default function Navbar() {
     var navLinks = document.getElementById('navbar_links_mobile'),
       navStyle = window.getComputedStyle(navLinks),
       navDisplay = navStyle.getPropertyValue('display');
-    
+    // window.addEventListener('resize', handleResize);
     if (navDisplay == 'none') {
       document.getElementById('navbar_links_mobile').style.display = 'flex';
     } else {
       document.getElementById('navbar_links_mobile').style.display = 'none';
     }
+  }
+
+  function handleresize() {
+    console.log('resize');
   }
 
   return (
