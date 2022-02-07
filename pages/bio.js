@@ -16,10 +16,10 @@ export default function Bio() {
     }
     var testimony = {
       1: {
-        name: 'Jennie Ruby Jane',
-        role: 'Design Lead at Gojek',
-        body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.',
-        img: '/testimony/face1.png'
+        name: 'Bhawna Joshi',
+        role: 'Product Designer at Gojek',
+        body: 'Praveen in one word is a perfectionist. He is very passionate about problem solving as a whole. For him its never about finishing a task it’s about conquering it. He also a visionary who knows where to take a product. I personally have learnt a lot, because he makes sure others also get the benefits of his knowledge. He is a humble collaborator who is patient with you. He also makes sure others understand his intentions are to genuinely help the product grow. That makes anyone trust his work.',
+        img: '/testimony/bhawna.png'
       },
       2: {
         name: 'Roy Hemsworth',
@@ -34,10 +34,10 @@ export default function Bio() {
         img: '/testimony/face3.png'
       },
       4: {
-        name: 'Tara Chandra',
-        role: 'Engineering Manager at Gojek',
-        body: 'Praveen Suhag is an illustrator who thinks like a computer, who works with machine-like precision but with the heart of a human being. She’s living in the modern world, using what her hands do best and making this wonderful synthesis, a precise blend.',
-        img: '/testimony/face4.png'
+        name: 'Bhawna Joshi',
+        role: 'Product Designer at Gojek',
+        body: 'Praveen in one word is a perfectionist. He is very passionate about problem solving as a whole. For him its never about finishing a task it’s about conquering it. He also a visionary who knows where to take a product. I personally have learnt a lot, because he makes sure others also get the benefits of his knowledge. He is a humble collaborator who is patient with you. He also makes sure others understand his intentions are to genuinely help the product grow. That makes anyone trust his work.',
+        img: '/testimony/bhawna.png'
       },
       5: {
         name: 'Vidya Mandir',
@@ -90,15 +90,15 @@ export default function Bio() {
       <div className="testimony">
         <h4>What others say</h4>
         <div className="testimony_thumbnails">
-          <div className="faces thumbnail_active" onClick={changeTestimony}><Image src="/testimony/face1.png" height={40} width={40} className="custom_face" data-number="1"/></div>
+          <div className="faces thumbnail_active" onClick={changeTestimony}><Image src="/testimony/bhawna.png" height={40} width={40} className="custom_face" data-number="1"/></div>
           <div className="faces" onClick={changeTestimony}><Image src="/testimony/face2.png" height={40} width={40} className="custom_face" data-number="2"/></div>
           <div className="faces" onClick={changeTestimony}><Image src="/testimony/face3.png" height={40} width={40} className="custom_face" data-number="3"/></div>
-          <div className="faces" onClick={changeTestimony}><Image src="/testimony/face4.png" height={40} width={40} className="custom_face" data-number="4"/></div>
+          <div className="faces" onClick={changeTestimony}><Image src="/testimony/face2.png" height={40} width={40} className="custom_face" data-number="4"/></div>
           <div className="faces" onClick={changeTestimony}><Image src="/testimony/face5.png" height={40} width={40} className="custom_face" data-number="5"/></div>
         </div>
         <div className="testimony_content">
           <div className="testimony_content_header">
-            <div className="testimony_content_face"><img src="/testimony/face1.png" height={80} width={80} className="testimony_content_face_custom" id="testimony_content_face_custom" /></div>
+            <div className="testimony_content_face"><img src="/testimony/bhawna.png" height={80} width={80} className="testimony_content_face_custom" id="testimony_content_face_custom" /></div>
             <div>
               <p className="testimony_content_name" id="testimony_content_name">Jennie Ruby Jane</p>
               <p className="testimony_content_role" id="testimony_content_role">Design Lead at Gojek</p>
