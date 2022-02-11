@@ -8,25 +8,25 @@ import Footer from '../components/footer';
 
 export default function Bio() {
   var testimony = {
-    1: {
+    4: {
       name: 'Aprajit Kar',
       role: 'Design Manager at Gojek',
       body: 'Praveen in one word is a perfectionist. He is very passionate about problem solving as a whole. For him its never about finishing a task it’s about conquering it. He also a visionary who knows where to take a product. I personally have learnt a lot, because he makes sure others also get the benefits of his knowledge. He is a humble collaborator who is patient with you. He also makes sure others understand his intentions are to genuinely help the product grow. That makes anyone trust his work.',
       img: '/testimony/aprajit.png'
     },
-    2: {
+    3: {
       name: 'Ravi Suhag',
       role: 'VP Engineering at Gojek',
       body: 'Praveen Suhag is an illustrator who thinks like a computer, who works with machine-like precision but with the heart of a human being. She’s living in the modern world, using what her hands do best and making this wonderful synthesis, a precise blend.',
       img: '/testimony/ravi.png'
     },
-    3: {
+    1: {
       name: 'Akarsh Satija',
       role: 'Engineering Manager at Gojek',
       body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.',
       img: '/testimony/akarsh.png'
     },
-    4: {
+    2: {
       name: 'Bhawna Joshi',
       role: 'Product Designer at Gojek',
       body: "Praveen is a perfectionist and very passionate about solving problems. To him, it's never about just finishing a task but conquering it. He is a visionary and humble collaborator who knows where to take a product. He makes sure others understand his intent towards the product that helps him earn their trust. I have learnt a lot because he makes sure others also get to learn from his knowledge.",
@@ -85,16 +85,16 @@ export default function Bio() {
           <div className="dp"></div>
         </div>
       </div>
-      <div className="sun hide"><Image src="/sun.svg" width={160} height={158} /></div>
+      <div className="sun"><Image src="/sun.svg" width={160} height={158} /></div>
       
-      <div className="testimony hide">
+      <div className="testimony">
         <h4>What others say</h4>
         <div className="testimony_thumbnails">
           <div className="faces thumbnail_active" onClick={changeTestimony}><Image src={testimony[1].img} height={40} width={40} className="custom_face" data-number="1"/></div>
           <div className="faces" onClick={changeTestimony}><Image src={testimony[2].img} height={40} width={40} className="custom_face" data-number="2"/></div>
-          <div className="faces" onClick={changeTestimony}><Image src={testimony[3].img} height={40} width={40} className="custom_face" data-number="3"/></div>
-          <div className="faces" onClick={changeTestimony}><Image src={testimony[4].img} height={40} width={40} className="custom_face" data-number="4"/></div>
-          <div className="faces" onClick={changeTestimony}><Image src={testimony[5].img} height={40} width={40} className="custom_face" data-number="5"/></div>
+          <div className="faces hide" onClick={changeTestimony}><Image src={testimony[3].img} height={40} width={40} className="custom_face" data-number="3"/></div>
+          <div className="faces hide" onClick={changeTestimony}><Image src={testimony[4].img} height={40} width={40} className="custom_face" data-number="4"/></div>
+          <div className="faces hide" onClick={changeTestimony}><Image src={testimony[5].img} height={40} width={40} className="custom_face" data-number="5"/></div>
         </div>
         <div className="testimony_content">
           <div className="testimony_content_header">
