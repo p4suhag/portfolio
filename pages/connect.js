@@ -19,8 +19,9 @@ export default function Connect() {
       <div className="connect">
         <div className="connect_content">
           <h1>Let's get in touch!</h1>
-          <p>Say hello at: <span> p4suhag@gmail.com</span></p>
+          <p>Say hello at: <a href="mailto:p4suhag@gmail.com"><span>p4suhag@gmail.com</span></a></p>
           <p>I like to meet people and make meaningful connections. Feel free to reach out to discuss something or just a friendly hello.</p>
+          <p className="resume_container"><a href="/resume.pdf" target="_blank" className="resume">Resume</a></p>
           <SocialIcons />
         </div>
         <div className="telephone_container">

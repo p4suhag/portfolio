@@ -19,7 +19,7 @@ export default function Console() {
       <div className="case_study_section">
         <div className="container">
           <h2>Console</h2>
-          <p>This project is under NDA, please reach out to <span>p4suhag@gmail.com</span> to know more about it.</p>
+          <p>This project is under NDA, please reach out to <a href="mailto:p4suhag@gmail.com"><span>p4suhag@gmail.com</span></a> to know more about it.</p>
         </div>
       </div>
 

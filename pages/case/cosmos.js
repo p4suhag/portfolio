@@ -171,13 +171,14 @@ export default function Cosmos() {
 
       <div className="case_study_section">
         <div className="container">
-          <div className="case_study_icons"><Image src="/efficient.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image src="/central.svg" width={96} height={66} /></div>
           <h3>Making it centralized</h3>
-          <p>Historically, metrics and KPIs are managed locally, within individual groups, with little coordination. With the new approach, we aimed to centralise metric stores so that it’s accessible anywhere data is consumed.</p>
+          <p>Historically, metrics and KPIs are managed locally, within individual groups, with little coordination. This has to be centralized so that everyone has a similar and monitored way of defining a metric and it’s accessible anywhere data is consumed.</p>
           <div className="case_study_sub_section">
             <h4>Defining a metric</h4>
-            <p>When the experience of defining metrics across the organisation is cohesive it makes the process efficient and easy to find duplication in the system.</p>
+            <p>With a central system, the experience of defining metrics became cohesive, efficient and easy to monitor. This approach helped owners to collaborate in a better way and remove the chances of duplication.</p>
             <div className="case_study_image"><Image src="/cosmos/metric-general.png" width={1040} height={790} /></div>
+            <p className="m-top-m">Also, we provided a simple way of defining required conditions through the interface and based on that system generates the SQL Query. This saved a lot of time for data analysts because they used to write this query from scratch.</p>
             <div className="case_study_image"><Image src="/cosmos/metric-parameter.png" width={1040} height={790} /></div>
           </div>
         </div>
@@ -185,19 +186,19 @@ export default function Cosmos() {
 
       <div className="case_study_section">
         <div className="container">
-          <div className="case_study_icons"><Image src="/inclusive.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image src="/reliable.svg" width={96} height={66} /></div>
           <h3>Making it reliable</h3>
           <p>The most frequent and frustrating question is - ‘Can I trust this data?’ and as discussed before, to build that trust in our data, users need answers to - Who build it? When was it updated? Is there any approval process?</p>
           <p>Users goal is to make decisions based on analysis, not to verify the data itself.</p>
           <div className="case_study_sub_section">
             <h4>Defining metric formulas</h4>
-            <p>Our system explicitly provides visibility for all the information needed for someone to trust the data.</p>
-            <p>Users can look into the formulas defined for a metric.</p>
+            <p>Our system generates a schema from the tables available in data source, this let’s user define quantitative and categorical data. Here users can define filters and dimensions that can be used as exploratory properties.</p>
+            <p>Our system explicitly provides visibility for all the information needed for someone to trust the data. Users can look into the formulas defined for a metric and how it’s calculated.</p>
             <div className="case_study_image"><Image src="/cosmos/cube-schema.png" width={1040} height={790} /></div>
           </div>
           <div className="case_study_sub_section">
             <h4>Audit History</h4>
-            <p>The audit feature provides visibility into the evolution of a metric.</p>
+            <p>The audit feature provides visibility into the evolution of a schema, what are all the changes made in the past and by whom. Allowing this to be managed like code, version control gives complete visibility and helps build the trust in data.</p>
             <div className="case_study_image"><Image src="/cosmos/cube-history.png" width={1040} height={790} /></div>
           </div>
         </div>
@@ -205,9 +206,9 @@ export default function Cosmos() {
 
       <div className="case_study_section">
         <div className="container">
-          <div className="case_study_icons"><Image src="/progressive.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image src="/accessible.svg" width={96} height={66} /></div>
           <h3>Making it accessible</h3>
-          <p>A single source of truth allows metrics to be accessible and shareable, which enables people to reuse things instead of creating their own copy.</p>
+          <p>Once the system is centralized and all the metrics are onboarded on to it, lot of day to day things become simple. Users don’t have to Slack people to ask where metrics are stored. If anyone has any question related to metrics they have one single place to look at and it’s cosmos. No more back and forth communication and requesting access to many google sheets.</p>
           <div className="case_study_image"><Image src="/cosmos/metric-list.png" width={1040} height={790} /></div>
           <div className="case_study_image"><Image src="/cosmos/metric-overview.png" width={1040} height={790} /></div>
           
@@ -216,16 +217,18 @@ export default function Cosmos() {
 
       <div className="case_study_section">
         <div className="container">
-          <div className="case_study_icons"><Image src="/useful.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image src="/action.svg" width={96} height={66} /></div>
           <h3>Making it actionable</h3>
-          <p>The problem with the existing system was that it created a dependency on analysts to do exploratory analysis. Business owners couldn’t perform such actions without the knowledge of query.</p>
-          <p>Our system should enable everyone to do their job rather than asking them to learn analytics skills.</p>
+          <p>The problem with the existing system was that it created a dependency on analysts to do exploratory analysis. Business owners couldn’t perform such actions without the knowledge of how to query.</p>
+          <p>Making the data available to everyone, and free up data analysts to work on more crucial projects became very obvious. But we can not expect people to learn analytics skills so that they can navigate through this data.</p>
+          <p>No, it has to be approached in a way that system take away that burden from users shoulder so that they can easily explore the data and get answers to their questions.</p>
+          <p>We translated the raw data into simple and expressive experience for them to explore all the meta data or properties by selecting their rules and requirements.</p>
           <div className="case_study_image"><Image src="/cosmos/analysis.png" width={1040} height={790} /></div>
           
         </div>
       </div>
 
-      <div className="case_study_section">
+      <div className="case_study_section hide">
         <div className="container">
           <div className="case_study_icons"><Image src="/impact.svg" width={96} height={66} /></div>
           <h3>Impact</h3>

@@ -351,6 +351,17 @@ h1, h2, h3, h4, h5 {
 	transition: margin-left 0.15s ease-in-out;
 }
 
+/*.project_tile:hover {
+	cursor: pointer;
+}
+.project_tile:hover .case_study_button > p {
+	color: var(--primary);
+}
+.project_tile:hover .case_study_button_icon {
+	filter: grayscale(0);
+	margin-left: 3px;
+}*/
+
 .case_study_button:hover {
 	cursor: pointer;
 }
@@ -507,6 +518,26 @@ h1, h2, h3, h4, h5 {
 .connect_content .social_links {
 	justify-content: start;
 	margin-top: 80px;
+}
+
+.resume_container {
+	margin: 40px 0;
+}
+.resume {
+	width: fit-content;
+	border: 2px solid var(--primary);
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  margin: 40px 0;
+}
+.resume:hover {
+	color: var(--on_primary);
+	background-color: var(--primary);
 }
 
 
@@ -728,6 +759,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /*--- Litmus Case Study ---*/
+.m-top-m {
+	margin-top: 48px;
+}
 
 .case_study p {
 	max-width: 900px;
@@ -869,10 +903,10 @@ h1, h2, h3, h4, h5 {
   	left: 15%;
   }
   .case_study_section {
-  	margin-bottom: 120px;
+  	margin-bottom: 96px;
   }
   .case_study_sub_section {
-  	margin-top: 80px;
+  	margin-top: 56px;
   }
 }
 

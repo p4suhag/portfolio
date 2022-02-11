@@ -65,7 +65,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="project_tile_image">
-              <Image src="/litmus/rules.png" width={640} height={486} />
+              <Image src="/console/quality.png" width={640} height={486} />
             </div>
           </div>
         </div>
