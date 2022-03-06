@@ -23,7 +23,7 @@ export default function Bio() {
     1: {
       name: 'Akarsh Satija',
       role: 'Engineering Manager at Gojek',
-      body: 'If you’re looking for an exceptional product designer, I highly recommend reaching out to Praveen. He’s been a great extension of our team, and has already delivered a ton of great ideas and concepts in a short amount of time. He’s hardworking, creative, and most importantly a joy to work with.',
+      body: "Praveen is everything you want in a designer, it's rare to find someone who can work on strategy, research, wireframes, interface, animations and whatever it takes to craft amazing products. He is passionate, smart but most importantly his understanding of technology allows him to work on really complex problems we were solving in the data engineering team. I highly recommend Praveen for anyone looking for a strategic design leader and a team player.",
       img: '/testimony/akarsh.png'
     },
     2: {

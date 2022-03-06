@@ -68,6 +68,22 @@ export default function Home() {
               <Image src="/console/quality.png" width={640} height={486} />
             </div>
           </div>
+
+          <div className="project_tile apsara_cover">
+            <div className="project_tile_content">
+              <h2>Apsara</h2>
+              <p>Apsara is a Design System to power the projects of Open DataOps Foundation.</p>
+              <Link href="/case/apsara">
+                <span className="case_study_button">
+                  <p>Open Case Study</p>
+                  <div className="case_study_button_icon"><Image src="/forward_arrow.svg" width={24} height={24}/></div>
+                </span>
+              </Link>
+            </div>
+            <div className="project_tile_image">
+              <Image src="/apsara/banner.png" width={640} height={486} />
+            </div>
+          </div>
         </div>
           
       </main>

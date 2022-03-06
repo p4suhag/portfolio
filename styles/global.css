@@ -81,6 +81,12 @@ h1, h2, h3, h4, h5 {
   /*min-height: 100vh;*/
 }
 
+.hide {
+	display: none;
+}
+
+
+
 @media (max-width: 1200px) {
   .container {
     margin: 0 56px;
@@ -162,9 +168,6 @@ h1, h2, h3, h4, h5 {
 	transition: left 0.15s ease-in-out;
 }
 
-.hide {
-	display: none;
-}
 
 .back_home:hover {
 	cursor: pointer;
@@ -383,7 +386,8 @@ h1, h2, h3, h4, h5 {
 
 .litmus_cover:before,
 .cosmos_cover:before,
-.console_cover:before {
+.console_cover:before,
+.apsara_cover:before {
 	content: ' ';
   display: block;
   position: absolute;
@@ -415,7 +419,8 @@ h1, h2, h3, h4, h5 {
 	}
 	.litmus_cover:before,
 	.cosmos_cover:before,
-	.console_cover:before {
+	.console_cover:before,
+	.apsara_cover:before {
 	  right: -310px;
 	}  
 }
@@ -438,7 +443,8 @@ h1, h2, h3, h4, h5 {
   }
   .litmus_cover:before, 
   .cosmos_cover:before, 
-  .console_cover:before {
+  .console_cover:before,
+  .apsara_cover:before {
     bottom: -500px;
     transform: rotate(200deg);
 	}
@@ -481,7 +487,8 @@ h1, h2, h3, h4, h5 {
 	}
 	.litmus_cover:before,
 	.cosmos_cover:before,
-	.console_cover:before {
+	.console_cover:before,
+	.apsara_cover:before {
 	  bottom: -560px;
 	}
 }
@@ -912,9 +919,27 @@ h1, h2, h3, h4, h5 {
 
 
 
+/*-----  Apsara Case Study ------*/
 
+.color_card_container {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+  margin: 40px auto;
+}
 
+.component_card_container {
+	margin: 56px auto;
+  column-width: 492px;
+  column-gap: 1em;
+}
 
+.component_card_container img {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 24px;
+}
 
 
 
