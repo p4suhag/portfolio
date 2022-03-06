@@ -407,7 +407,8 @@ h1, h2, h3, h4, h5 {
 .cosmos_cover:before {
 	filter: hue-rotate(238deg);
 }
-.console_cover:before {
+.console_cover:before,
+.apsara_cover:before {
 	filter: hue-rotate(318deg);
 	transform: rotate(93deg);
 }
