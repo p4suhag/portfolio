@@ -81,9 +81,6 @@ h1, h2, h3, h4, h5 {
   /*min-height: 100vh;*/
 }
 
-.hide {
-	display: none;
-}
 
 
 
@@ -209,6 +206,10 @@ h1, h2, h3, h4, h5 {
 }
 .cross_icon {
 	margin-bottom: 24px;
+}
+
+.hide {
+	display: none;
 }
 
 @media (max-width: 600px) {
