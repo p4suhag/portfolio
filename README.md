@@ -12,8 +12,6 @@ This portfolio makes use of many great tools; tools that make my life as a devel
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-The font used is Roboto, and is served via Google Fonts. The photograph on the bio’s masthead is of me speaking at HasGeek.
-
 ### Usage
 
 To install dependencies:
