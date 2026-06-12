@@ -1,17 +1,16 @@
-import Head from 'next/head'
-import Navbar from '/components/navbar';
-import Footer from '/components/footer';
+import Navbar from '../../../components/navbar';
+import Footer from '../../../components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Console Case Study',
+  description: "Praveen Suhag's Portfolio",
+};
 
 export default function Console() {
   return (
     <div className="case_study">
-      <Head>
-        <title>Console Case Study</title>
-        <meta name="description" content="Praveen Suhag's Portfolio" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
       <div className="container">
         <Navbar />
       </div>

@@ -1,19 +1,16 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Navbar from '../components/navbar';
-import SocialIcons from '../components/socialicons';
+import Navbar from '../../components/navbar';
+import SocialIcons from '../../components/socialicons';
 
+export const metadata = {
+  title: 'Praveen Suhag - Connect',
+  description: "Praveen Suhag's Contact",
+};
 
 export default function Connect() {
   return (
     <div className="container">
-      <Head>
-        <title>Praveen Suhag - Connect</title>
-        <meta name="description" content="Praveen Suhag's Contact" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
-
       <Navbar />
 
       <div className="connect">
@@ -25,7 +22,7 @@ export default function Connect() {
           <SocialIcons />
         </div>
         <div className="telephone_container">
-          <Image className="telephone" src="/telephone.svg" width={240} height={180} />
+          <Image alt="Telephone" className="telephone" src="/telephone.svg" width={240} height={180} />
         </div>
         
       </div>

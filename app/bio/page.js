@@ -1,9 +1,9 @@
-import Head from 'next/head'
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import Script from 'next/script'
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 
 
 export default function Bio() {
@@ -59,12 +59,6 @@ export default function Bio() {
 
   return (
     <div className="container bio_page">
-      <Head>
-        <title>Praveen Suhag - Bio</title>
-        <meta name="description" content="Praveen Suhag's Bio" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
-
       <Navbar />
       <div className="bio_headline">
         <h1>Designer / Developer / Dendrophile</h1>
@@ -85,20 +79,20 @@ export default function Bio() {
           <div className="dp"></div>
         </div>
       </div>
-      <div className="sun"><Image src="/sun.svg" width={160} height={158} /></div>
+      <div className="sun"><Image alt="Sun" src="/sun.svg" width={160} height={158} /></div>
       
       <div className="testimony">
         <h4>What others say</h4>
         <div className="testimony_thumbnails">
-          <div className="faces thumbnail_active" onClick={changeTestimony}><Image src={testimony[1].img} height={40} width={40} className="custom_face" data-number="1"/></div>
-          <div className="faces" onClick={changeTestimony}><Image src={testimony[2].img} height={40} width={40} className="custom_face" data-number="2"/></div>
-          <div className="faces hide" onClick={changeTestimony}><Image src={testimony[3].img} height={40} width={40} className="custom_face" data-number="3"/></div>
-          <div className="faces hide" onClick={changeTestimony}><Image src={testimony[4].img} height={40} width={40} className="custom_face" data-number="4"/></div>
-          <div className="faces hide" onClick={changeTestimony}><Image src={testimony[5].img} height={40} width={40} className="custom_face" data-number="5"/></div>
+          <div className="faces thumbnail_active" onClick={changeTestimony}><Image alt="Testimonial author" src={testimony[1].img} height={40} width={40} className="custom_face" data-number="1"/></div>
+          <div className="faces" onClick={changeTestimony}><Image alt="Testimonial author" src={testimony[2].img} height={40} width={40} className="custom_face" data-number="2"/></div>
+          <div className="faces hide" onClick={changeTestimony}><Image alt="Testimonial author" src={testimony[3].img} height={40} width={40} className="custom_face" data-number="3"/></div>
+          <div className="faces hide" onClick={changeTestimony}><Image alt="Testimonial author" src={testimony[4].img} height={40} width={40} className="custom_face" data-number="4"/></div>
+          <div className="faces hide" onClick={changeTestimony}><Image alt="Testimonial author" src={testimony[5].img} height={40} width={40} className="custom_face" data-number="5"/></div>
         </div>
         <div className="testimony_content">
           <div className="testimony_content_header">
-            <div className="testimony_content_face"><img src={testimony[1].img} height={80} width={80} className="testimony_content_face_custom" id="testimony_content_face_custom" /></div>
+            <div className="testimony_content_face"><img alt="Testimonial author" src={testimony[1].img} height={80} width={80} className="testimony_content_face_custom" id="testimony_content_face_custom" /></div>
             <div>
               <p className="testimony_content_name" id="testimony_content_name">{testimony[1].name}</p>
               <p className="testimony_content_role" id="testimony_content_role">{testimony[1].role}</p>

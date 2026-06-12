@@ -1,17 +1,16 @@
-import Head from 'next/head'
-import Navbar from '/components/navbar';
-import Footer from '/components/footer';
+import Navbar from '../../../components/navbar';
+import Footer from '../../../components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Cosmos Case Study',
+  description: "Praveen Suhag's Portfolio",
+};
 
 export default function Cosmos() {
   return (
     <div className="case_study">
-      <Head>
-        <title>Cosmos Case Study</title>
-        <meta name="description" content="Praveen Suhag's Portfolio" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
       <div className="container">
         <Navbar />
       </div>
@@ -22,8 +21,8 @@ export default function Cosmos() {
           <p>Cosmos is a platform designed for Gojek to allow users to define, compute, explore and analyse quantified measures. Metrics and KPI’s are foundations for an OKR driven company. The ideology behind Cosmos is that you can’t make an organisation data-driven if people building experiences are not able to get their hands on information easily.</p>
         </div>
         <div className="cover_image">
-          <div className="cover_image_back"><Image src="/cosmos/analysis.png" width={798} height={608} /></div>
-          <div className="cover_image_front"><Image src="/cosmos/cube-schema.png" width={798} height={608} /></div>
+          <div className="cover_image_back"><Image alt="Analysis" src="/cosmos/analysis.png" width={798} height={608} /></div>
+          <div className="cover_image_front"><Image alt="Cube schema" src="/cosmos/cube-schema.png" width={798} height={608} /></div>
         </div>
       </div>
 
@@ -89,7 +88,7 @@ export default function Cosmos() {
             <h5>Users Journey</h5>
             <p>The overall experience of business analysts can broadly be represented with the following three stages.</p>
           </div>
-          <div className="case_study_image litmus_journey"><Image src="/cosmos/analyst-journey.png" width={1440} height={614} /></div>
+          <div className="case_study_image litmus_journey"><Image alt="Analyst journey" src="/cosmos/analyst-journey.png" width={1440} height={614} /></div>
           <div className="container">
             <p><strong>Define</strong> the metric definition and formula to keep it a single source of truth. This stage also captures the owners, data source, and other metadata of the metric as well.</p>
             <p><strong>Compute</strong> the metric using data processing tools. Computation requires analysts to write queries or formulas to calculate the metric in a standard way.</p>
@@ -118,7 +117,7 @@ export default function Cosmos() {
             <h5>Users Journey</h5>
             <p>The overall experience of business owners can broadly be represented with the following three stages.</p>
           </div>
-          <div className="case_study_image litmus_journey"><Image src="/cosmos/business-journey.png" width={1440} height={614} /></div>
+          <div className="case_study_image litmus_journey"><Image alt="Business journey" src="/cosmos/business-journey.png" width={1440} height={614} /></div>
           <div className="container">
             <p><strong>Explore</strong> all the available metrics in the organization to know what metrics exist and which ones matter the most. It also allows users to browse through all defined metrics across the organization quickly.</p>
             <p><strong>Understand</strong> how the metric is defined. It also allows users to view metric details like formula, description, primary owner, and more.</p>
@@ -130,7 +129,7 @@ export default function Cosmos() {
             <h3>Existing Landscape</h3>
             <p>Before we start discussing the proposed solution let’s look into the existing toolset people are using to get things done.</p>
           </div>
-          <div className="case_study_image litmus_journey"><Image src="/cosmos/existing-landscape.png" width={1440} height={840} /></div>
+          <div className="case_study_image litmus_journey"><Image alt="Existing landscape" src="/cosmos/existing-landscape.png" width={1440} height={840} /></div>
           <div className="container">
             <p>This is what the existing system looks like, each team manages their metrics independently on google sheets and those are being shared across each other.</p>
             <p>Metric definition and computational formulas are mentioned in these sheets along with other metadata information. Python scripts and Optimus are used for the computational purpose.</p>
@@ -152,7 +151,7 @@ export default function Cosmos() {
             <h3>Proposed Landscape</h3>
             <p>We proposed a system design to solve all the existing challenges of metric management. It was thought in a way to be easily scaled and integrated with intelligence-related use cases.</p>
           </div>
-          <div className="case_study_image litmus_journey"><Image src="/cosmos/proposed-landscape.png" width={1440} height={504} /></div>
+          <div className="case_study_image litmus_journey"><Image alt="Proposed landscape" src="/cosmos/proposed-landscape.png" width={1440} height={504} /></div>
         </div>
       </div>
 
@@ -171,22 +170,22 @@ export default function Cosmos() {
 
       <div className="case_study_section">
         <div className="container">
-          <div className="case_study_icons"><Image src="/central.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image alt="Central" src="/central.svg" width={96} height={66} /></div>
           <h3>Making it centralized</h3>
           <p>Historically, metrics and KPIs are managed locally, within individual groups, with little coordination. This has to be centralized so that everyone has a similar and monitored way of defining a metric and it’s accessible anywhere data is consumed.</p>
           <div className="case_study_sub_section">
             <h4>Defining a metric</h4>
             <p>With a central system, the experience of defining metrics became cohesive, efficient and easy to monitor. This approach helped owners to collaborate in a better way and remove the chances of duplication.</p>
-            <div className="case_study_image"><Image src="/cosmos/metric-general.png" width={1040} height={790} /></div>
+            <div className="case_study_image"><Image alt="Metric general" src="/cosmos/metric-general.png" width={1040} height={790} /></div>
             <p className="m-top-m">Also, we provided a simple way of defining required conditions through the interface and based on that system generates the SQL Query. This saved a lot of time for data analysts because they used to write this query from scratch.</p>
-            <div className="case_study_image"><Image src="/cosmos/metric-parameter.png" width={1040} height={790} /></div>
+            <div className="case_study_image"><Image alt="Metric parameter" src="/cosmos/metric-parameter.png" width={1040} height={790} /></div>
           </div>
         </div>
       </div>
 
       <div className="case_study_section">
         <div className="container">
-          <div className="case_study_icons"><Image src="/reliable.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image alt="Reliable" src="/reliable.svg" width={96} height={66} /></div>
           <h3>Making it reliable</h3>
           <p>The most frequent and frustrating question is - ‘Can I trust this data?’ and as discussed before, to build that trust in our data, users need answers to - Who build it? When was it updated? Is there any approval process?</p>
           <p>Users goal is to make decisions based on analysis, not to verify the data itself.</p>
@@ -194,43 +193,43 @@ export default function Cosmos() {
             <h4>Defining metric formulas</h4>
             <p>Our system generates a schema from the tables available in data source, this let’s user define quantitative and categorical data. Here users can define filters and dimensions that can be used as exploratory properties.</p>
             <p>Our system explicitly provides visibility for all the information needed for someone to trust the data. Users can look into the formulas defined for a metric and how it’s calculated.</p>
-            <div className="case_study_image"><Image src="/cosmos/cube-schema.png" width={1040} height={790} /></div>
+            <div className="case_study_image"><Image alt="Cube schema" src="/cosmos/cube-schema.png" width={1040} height={790} /></div>
           </div>
           <div className="case_study_sub_section">
             <h4>Audit History</h4>
             <p>The audit feature provides visibility into the evolution of a schema, what are all the changes made in the past and by whom. Allowing this to be managed like code, version control gives complete visibility and helps build the trust in data.</p>
-            <div className="case_study_image"><Image src="/cosmos/cube-history.png" width={1040} height={790} /></div>
+            <div className="case_study_image"><Image alt="Cube history" src="/cosmos/cube-history.png" width={1040} height={790} /></div>
           </div>
         </div>
       </div>
 
       <div className="case_study_section">
         <div className="container">
-          <div className="case_study_icons"><Image src="/accessible.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image alt="Accessible" src="/accessible.svg" width={96} height={66} /></div>
           <h3>Making it accessible</h3>
           <p>Once the system is centralized and all the metrics are onboarded on to it, lot of day to day things become simple. Users don’t have to Slack people to ask where metrics are stored. If anyone has any question related to metrics they have one single place to look at and it’s cosmos. No more back and forth communication and requesting access to many google sheets.</p>
-          <div className="case_study_image"><Image src="/cosmos/metric-list.png" width={1040} height={790} /></div>
-          <div className="case_study_image"><Image src="/cosmos/metric-overview.png" width={1040} height={790} /></div>
+          <div className="case_study_image"><Image alt="Metric list" src="/cosmos/metric-list.png" width={1040} height={790} /></div>
+          <div className="case_study_image"><Image alt="Metric overview" src="/cosmos/metric-overview.png" width={1040} height={790} /></div>
           
         </div>
       </div>
 
       <div className="case_study_section">
         <div className="container">
-          <div className="case_study_icons"><Image src="/action.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image alt="Action" src="/action.svg" width={96} height={66} /></div>
           <h3>Making it actionable</h3>
           <p>The problem with the existing system was that it created a dependency on analysts to do exploratory analysis. Business owners couldn’t perform such actions without the knowledge of how to query.</p>
           <p>Making the data available to everyone, and free up data analysts to work on more crucial projects became very obvious. But we can not expect people to learn analytics skills so that they can navigate through this data.</p>
           <p>No, it has to be approached in a way that system take away that burden from users shoulder so that they can easily explore the data and get answers to their questions.</p>
           <p>We translated the raw data into simple and expressive experience for them to explore all the meta data or properties by selecting their rules and requirements.</p>
-          <div className="case_study_image"><Image src="/cosmos/analysis.png" width={1040} height={790} /></div>
+          <div className="case_study_image"><Image alt="Analysis" src="/cosmos/analysis.png" width={1040} height={790} /></div>
           
         </div>
       </div>
 
       <div className="case_study_section hide">
         <div className="container">
-          <div className="case_study_icons"><Image src="/impact.svg" width={96} height={66} /></div>
+          <div className="case_study_icons"><Image alt="Impact" src="/impact.svg" width={96} height={66} /></div>
           <h3>Impact</h3>
           <p>We noticed positive results with the above solutions in terms of quantitative and qualitative data. We started getting lots of feedback & feature requests from product groups to help them with running experiments.</p>
           <ul>
