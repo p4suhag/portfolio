@@ -1,17 +1,16 @@
-import Head from 'next/head';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Praveen Suhag',
+  description: "Praveen Suhag's Portfolio",
+};
+
 export default function Home() {
   return (
     <div className="work_page">
-      <Head>
-        <title>Praveen Suhag</title>
-        <meta name="description" content="Praveen Suhag's Portfolio" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
       <div className="container"><Navbar /></div>
       <main>
         <div className="work_cover">

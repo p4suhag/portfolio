@@ -1,9 +1,9 @@
-import Head from 'next/head'
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import Script from 'next/script'
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 
 
 export default function Bio() {
@@ -59,12 +59,6 @@ export default function Bio() {
 
   return (
     <div className="container bio_page">
-      <Head>
-        <title>Praveen Suhag - Bio</title>
-        <meta name="description" content="Praveen Suhag's Bio" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
-
       <Navbar />
       <div className="bio_headline">
         <h1>Designer / Developer / Dendrophile</h1>

@@ -6,8 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "^16",
+    "react": "^19",
+    "react-dom": "^19"
   }
 }
