@@ -24,28 +24,22 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <Link href="/" legacyBehavior>
-        <p
-          className={
-            pathname.includes("/case")
-              ? "navbar_logo hide"
-              : "navbar_logo"
-          }
-        >
-          Praveen Suhag
-        </p>
+      <Link
+        href="/"
+        className={
+          pathname.includes("/case") ? "navbar_logo hide" : "navbar_logo"
+        }
+      >
+        Praveen Suhag
       </Link>
-      <Link href="/" legacyBehavior>
-        <div
-          className={
-            pathname.includes("/case") ? "back_home" : "back_home hide"
-          }
-        >
-          <div className="nav_back_icon">
-            <Image src="/back_arrow.svg" width={24} height={24} />
-          </div>
-          <p>Back Home</p>
+      <Link
+        href="/"
+        className={pathname.includes("/case") ? "back_home" : "back_home hide"}
+      >
+        <div className="nav_back_icon">
+          <Image src="/back_arrow.svg" width={24} height={24} />
         </div>
+        <p>Back Home</p>
       </Link>
       <div className="navbar_links" id="navbar_links">
         <Link href="/" className={pathname == "/" ? "active" : ""}>
