@@ -24,11 +24,11 @@ export default function Home() {
               <p>Litmus is an experimentation platform designed to solve use case of running experiments across Gojek.</p>
               <Link href="/case/litmus" className="case_study_button">
                 <p>Open Case Study</p>
-                <div className="case_study_button_icon"><Image src="/forward_arrow.svg" width={24} height={24}/></div>
+                <div className="case_study_button_icon"><Image alt="" src="/forward_arrow.svg" width={24} height={24}/></div>
               </Link>
             </div>
             <div className="project_tile_image">
-              <Image src="/litmus/analysis.png" width={640} height={486} />
+              <Image alt="Analysis" src="/litmus/analysis.png" width={640} height={486} />
             </div>
           </div>
 
@@ -38,11 +38,11 @@ export default function Home() {
               <p>Apsara is a Design System to power the projects of Open DataOps Foundation.</p>
               <Link href="/case/apsara" className="case_study_button">
                 <p>Open Case Study</p>
-                <div className="case_study_button_icon"><Image src="/forward_arrow.svg" width={24} height={24}/></div>
+                <div className="case_study_button_icon"><Image alt="" src="/forward_arrow.svg" width={24} height={24}/></div>
               </Link>
             </div>
             <div className="project_tile_image">
-              <Image src="/apsara/banner.png" width={640} height={486} />
+              <Image alt="Banner" src="/apsara/banner.png" width={640} height={486} />
             </div>
           </div>
 
@@ -52,11 +52,11 @@ export default function Home() {
               <p>Cosmos is a platform designed to solve metrics and analytics related use cases.</p>
               <Link href="/case/cosmos" className="case_study_button">
                 <p>Open Case Study</p>
-                <div className="case_study_button_icon"><Image src="/forward_arrow.svg" width={24} height={24}/></div>
+                <div className="case_study_button_icon"><Image alt="" src="/forward_arrow.svg" width={24} height={24}/></div>
               </Link>
             </div>
             <div className="project_tile_image">
-              <Image src="/cosmos/cube-schema.png" width={640} height={486} />
+              <Image alt="Cube schema" src="/cosmos/cube-schema.png" width={640} height={486} />
             </div>
           </div>
 
@@ -66,11 +66,11 @@ export default function Home() {
               <p>Data Console is a platform designed to solve all data needs across Gojek and make it self serve for everyone.</p>
               <Link href="/case/console" className="case_study_button">
                 <p>Open Case Study</p>
-                <div className="case_study_button_icon"><Image src="/forward_arrow.svg" width={24} height={24}/></div>
+                <div className="case_study_button_icon"><Image alt="" src="/forward_arrow.svg" width={24} height={24}/></div>
               </Link>
             </div>
             <div className="project_tile_image">
-              <Image src="/console/quality.png" width={640} height={486} />
+              <Image alt="Quality" src="/console/quality.png" width={640} height={486} />
             </div>
           </div>
 

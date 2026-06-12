@@ -22,7 +22,7 @@ export default function Connect() {
           <SocialIcons />
         </div>
         <div className="telephone_container">
-          <Image className="telephone" src="/telephone.svg" width={240} height={180} />
+          <Image alt="Telephone" className="telephone" src="/telephone.svg" width={240} height={180} />
         </div>
         
       </div>

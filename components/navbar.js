@@ -37,7 +37,7 @@ export default function Navbar() {
         className={pathname.includes("/case") ? "back_home" : "back_home hide"}
       >
         <div className="nav_back_icon">
-          <Image src="/back_arrow.svg" width={24} height={24} />
+          <Image alt="" src="/back_arrow.svg" width={24} height={24} />
         </div>
         <p>Back Home</p>
       </Link>
@@ -56,11 +56,11 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="menu_icon" id="menu_icon" onClick={toggleMobileNav}>
-        <Image src="/menu.svg" height={24} width={28} />
+        <Image alt="" src="/menu.svg" height={24} width={28} />
       </div>
       <div className="navbar_links_mobile" id="navbar_links_mobile">
         <div className="cross_icon" id="cross_icon" onClick={toggleMobileNav}>
-          <Image src="/cross.svg" width={24} height={24} />
+          <Image alt="" src="/cross.svg" width={24} height={24} />
         </div>
         <Link
           href="/"
