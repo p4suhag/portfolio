@@ -1175,15 +1175,15 @@ h1, h2, h3, h4, h5 {
 
 .about_tile_logo {
 	flex-shrink: 0;
-	width: 40px;
-	height: 40px;
+	width: 36px;
+	height: 36px;
 	border-radius: 27px;
 	overflow: hidden;
 }
 
 .about_tile_logo img {
-	width: 40px;
-	height: 40px;
+	width: 36px;
+	height: 36px;
 	object-fit: cover;
 	display: block;
 }

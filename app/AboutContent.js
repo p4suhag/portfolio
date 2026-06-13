@@ -3,11 +3,20 @@
 import Image from 'next/image';
 import { motion, useReducedMotion } from 'framer-motion';
 
+// Static imports let next/image infer intrinsic dimensions and generate a
+// blur-up placeholder at build time, so the logos show instantly instead of
+// popping in. Paired with sizes="36px" the optimizer also serves a tiny
+// variant rather than the full 225px source.
+import pixxelLogo from '../public/about/pixxel.png';
+import ripplingLogo from '../public/about/rippling.png';
+import gojekLogo from '../public/about/gojek.png';
+import infoclotLogo from '../public/about/infoclot.png';
+
 const work = [
-  { company: 'Pixxel', role: 'Head of Design', dates: '2023 - Present', logo: '/about/pixxel.png' },
-  { company: 'Rippling', role: 'Principal Designer', dates: '2022 - 2023', logo: '/about/rippling.png' },
-  { company: 'Gojek', role: 'Head of Design - Data Products', dates: '2017 - 2022', logo: '/about/gojek.png' },
-  { company: 'Infoclot', role: 'Co-Founder', dates: '2012 - 2017', logo: '/about/infoclot.png' },
+  { company: 'Pixxel', role: 'Head of Design', dates: '2023 - Present', logo: pixxelLogo },
+  { company: 'Rippling', role: 'Principal Designer', dates: '2022 - 2023', logo: ripplingLogo },
+  { company: 'Gojek', role: 'Head of Design - Data Products', dates: '2017 - 2022', logo: gojekLogo },
+  { company: 'Infoclot', role: 'Co-Founder', dates: '2012 - 2017', logo: infoclotLogo },
 ];
 
 const writing = [
@@ -78,7 +87,14 @@ export default function AboutContent({ symbolPath }) {
           {work.map((item) => (
             <div className="about_tile" key={`${item.company}-${item.role}`}>
               <div className="about_tile_logo">
-                <Image src={item.logo} alt={item.company} width={40} height={40} />
+                <Image
+                  src={item.logo}
+                  alt={item.company}
+                  width={36}
+                  height={36}
+                  sizes="36px"
+                  placeholder="blur"
+                />
               </div>
               <div className="about_tile_text">
                 <p className="about_tile_company">{item.company}</p>
