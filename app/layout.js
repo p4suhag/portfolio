@@ -1,4 +1,18 @@
 import '../styles/global.css'
+import { Inter, Newsreader } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const newsreader = Newsreader({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '600', '700'],
+  variable: '--font-newsreader',
+})
 
 export const metadata = {
   title: 'Praveen Suhag',
@@ -8,20 +22,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        {children}
-      </body>
+    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+      <body>{children}</body>
     </html>
   )
 }

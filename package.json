@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^12.40.0",
     "next": "^16",
     "react": "^19",
     "react-dom": "^19"

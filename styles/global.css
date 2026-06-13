@@ -12,7 +12,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Inter', sans-serif;
+	font-family: var(--font-inter), 'Inter', sans-serif;
 	background: var(--background);
 	color: var(--on_background);
 }
@@ -956,13 +956,300 @@ h1, h2, h3, h4, h5 {
 }
 
 
+/*----- Home / About (Figma "Claude MCP Playground") -----*/
 
+.about_page {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background: #FFFFFF;
+	display: flex;
+	justify-content: center;
+}
 
+/* Centered content column */
+.about_container {
+	width: 624px;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	padding: 104px 24px;
+}
 
+/* Intro block */
+.about_intro {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: flex-start;
+}
 
+.about_title {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
 
+.about_symbol {
+	width: 40px;
+	height: 28px;
+	display: block;
+}
 
+.about_name {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.7);
+	margin: 0;
+}
 
+.about_bio {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.7);
+	margin: 0;
+}
 
+/* "Pixxel" inline emphasis — bold with a wavy underline */
+.about_pixxel {
+	font-weight: 700;
+	text-decoration: underline wavy rgba(0, 0, 0, 0.2);
+	text-decoration-thickness: 1px;
+	text-underline-position: from-font;
+}
 
+/* Social links — rendered as text (LinkedIn · Twitter · …) */
+.about_social_links a {
+	font-size: 12px;
+	line-height: normal;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.5);
+	white-space: nowrap;
+	transition: color 0.15s ease-in-out;
+}
 
+.about_social_links a:hover {
+	color: rgba(0, 0, 0, 0.9);
+}
+
+/* Newsreader serif for the name, section labels, "Pixxel" and social links */
+.about_serif .about_name,
+.about_serif .about_work_label,
+.about_serif .about_pixxel,
+.about_serif .about_social_links {
+	font-family: var(--font-newsreader), 'Newsreader', serif;
+}
+
+.about_name_lg {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+/* Writing list */
+.about_writing {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.about_writing_list {
+	/* Match the work tiles: rows bleed 12px past the column on each side. */
+	width: calc(100% + 24px);
+	margin: 0 -12px;
+}
+
+.about_writing_tile {
+	display: flex;
+	align-items: center;
+	height: 64px;
+	padding: 0 12px;
+	border-radius: 8px;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.about_writing_tile:hover {
+	background: rgb(0 0 0 / 3%);
+}
+
+.about_writing_row {
+	flex: 1 0 0;
+	min-width: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	height: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Last row has no divider */
+.about_writing_tile:last-child .about_writing_row {
+	border-bottom: none;
+}
+
+.about_writing_title {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.9);
+	margin: 0;
+}
+
+.about_writing_date {
+	flex-shrink: 0;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 0;
+}
+
+/* Social section (Variant B) */
+.about_social {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.about_social_links {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+/* Work list */
+.about_work {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: flex-start;
+}
+
+.about_work_label {
+	width: 100%;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.4);
+	margin: 0;
+}
+
+.about_tile {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	/* Tile extends 12px past the content column on each side so logos and
+	   text align to the column edge while the hover background bleeds out. */
+	width: calc(100% + 24px);
+	margin: 0 -12px;
+	padding: 12px;
+	border-radius: 8px;
+	overflow: hidden;
+	background: transparent;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.about_tile:hover {
+	background: rgb(0 0 0 / 3%);
+}
+
+.about_tile_logo {
+	flex-shrink: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 27px;
+	overflow: hidden;
+}
+
+.about_tile_logo img {
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	display: block;
+}
+
+.about_tile_text {
+	flex: 1 0 0;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4px;
+}
+
+.about_tile_company {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.9);
+	margin: 0;
+}
+
+.about_tile_role {
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.7);
+	margin: 0;
+}
+
+.about_tile_date {
+	flex-shrink: 0;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 0;
+}
+
+/* Entrance animation (symbol pencil-draw + staggered content) is driven by
+   Framer Motion in AboutContent.js. The bios are wrapped in a group so they
+   rise as one block, so the group restores the 24px rhythm the intro's flex
+   gap used to provide between paragraphs. */
+.about_bio_group {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+@media (max-width: 680px) {
+	.about_container {
+		padding: 80px 24px 96px 24px;
+	}
+}
+
+@media (max-width: 440px) {
+	.about_tile {
+		flex-wrap: wrap;
+	}
+	.about_tile_date {
+		width: 100%;
+		text-align: left;
+		padding-left: 64px;
+	}
+}
