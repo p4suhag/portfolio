@@ -22,7 +22,7 @@ const work = [
 ];
 
 const writing = [
-  { title: 'The silent killers of good design', date: 'Jan 10, 2025', href: '/writing/the-silent-killers-of-good-design' },
+  { title: 'The silent killers of good design', date: 'Apr 23, 2025', href: '/writing/the-silent-killers-of-good-design' },
   { title: 'The soul of good design', date: 'Jan 5, 2025', href: '/writing/the-soul-of-good-design' },
 ];
 

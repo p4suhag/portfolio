@@ -1,6 +1,6 @@
 ---
 title: The Silent Killers of Good Design
-date: Jan 10, 2025
+date: Apr 23, 2025
 ---
 
 Good design is fragile. It doesn’t come from effort alone. It demands vision, obsession, and ruthless clarity. But even the most well-intentioned creations are vulnerable to unseen forces — silent killers that erode beauty, dilute purpose, and drain the soul from a product.
