@@ -1,5 +1,5 @@
 :root {
-  --background: #FFFBFF;
+  --background: #FAFAFA;
   --on_background: #1C1B1E;
   --primary:  #642EF4;
   --on_primary:  #FFFFFF;
@@ -13,6 +13,9 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: var(--font-inter), 'Inter', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 	background: var(--background);
 	color: var(--on_background);
 }
@@ -962,7 +965,7 @@ h1, h2, h3, h4, h5 {
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	background: #FFFFFF;
+	background: #FAFAFA;
 	display: flex;
 	justify-content: center;
 }
@@ -1008,7 +1011,7 @@ h1, h2, h3, h4, h5 {
 
 .about_bio {
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 28px;
 	font-weight: 400;
 	letter-spacing: 0.02em;
 	color: rgba(0, 0, 0, 0.7);
@@ -1041,7 +1044,8 @@ h1, h2, h3, h4, h5 {
 .about_serif .about_name,
 .about_serif .about_work_label,
 .about_serif .about_pixxel,
-.about_serif .about_social_links {
+.about_serif .about_social_links,
+.about_serif .writing_title {
 	font-family: var(--font-newsreader), 'Newsreader', serif;
 }
 
@@ -1241,6 +1245,131 @@ h1, h2, h3, h4, h5 {
 	.about_container {
 		padding: 80px 24px 96px 24px;
 	}
+}
+
+/*----- Writing detail (Figma "Writing") -----*/
+
+.writing_detail {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.writing_header {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	align-items: flex-start;
+	width: 100%;
+}
+
+/* "Back to Home" liquid pill */
+.writing_back {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	min-height: 24px;
+	padding: 4px 10px;
+	border: 0.5px solid #e9e6e6;
+	border-radius: 6px;
+	background: #fafafa;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02), inset 0 2px 0 0 #fff;
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	color: #838383;
+}
+
+.writing_back:hover {
+	background: #f5f5f5;
+	color: #202020;
+}
+
+.writing_back svg {
+	display: block;
+	flex-shrink: 0;
+}
+
+/* Article headline — large serif, the top of the type scale (32 / 20 / 16). */
+.writing_title {
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+	color: rgba(0, 0, 0, 0.88);
+	margin: 0;
+}
+
+/* Rendered markdown body. Spacing is margin-based (not a flat gap) so headings
+   hug the paragraph that follows them instead of floating between sections. */
+.writing_prose {
+	width: 100%;
+}
+
+.writing_prose > * {
+	margin: 0 0 22px;
+}
+
+.writing_prose > *:last-child {
+	margin-bottom: 0;
+}
+
+.writing_prose p {
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	color: rgba(0, 0, 0, 0.72);
+	margin: 0 0 22px;
+}
+
+.writing_prose strong {
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.88);
+}
+
+/* Section headings: generous space above to separate sections, tight below to
+   bind to their paragraph. */
+.writing_prose h2,
+.writing_prose h3 {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 600;
+	letter-spacing: -0.005em;
+	color: rgba(0, 0, 0, 0.88);
+	margin: 56px 0 12px;
+}
+
+.writing_prose > h2:first-child,
+.writing_prose > h3:first-child {
+	margin-top: 0;
+}
+
+.writing_prose a {
+	color: var(--primary);
+}
+
+.writing_prose ul,
+.writing_prose ol {
+	margin: 0 0 22px;
+	padding-left: 20px;
+}
+
+.writing_prose li {
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	color: rgba(0, 0, 0, 0.72);
+	margin: 0 0 10px;
+	padding-left: 4px;
+}
+
+.writing_prose li:last-child {
+	margin-bottom: 0;
 }
 
 @media (max-width: 440px) {

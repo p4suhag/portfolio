@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 
 // Static imports let next/image infer intrinsic dimensions and generate a
@@ -20,9 +22,8 @@ const work = [
 ];
 
 const writing = [
-  { title: 'The silent killers of good design', date: 'Jan 10, 2025' },
-  { title: 'The soul of good design', date: 'Jan 5, 2025' },
-  { title: 'Good design is like loose motion', date: 'Dec 18, 2024' },
+  { title: 'The silent killers of good design', date: 'Jan 10, 2025', href: '/writing/the-silent-killers-of-good-design' },
+  { title: 'The soul of good design', date: 'Jan 5, 2025', href: '/writing/the-soul-of-good-design' },
 ];
 
 const socials = [
@@ -36,12 +37,27 @@ const socials = [
 const DRAW_DURATION = 3;
 const SECTION_STAGGER = 0.3;
 
+// Module-level flag: persists across client-side (SPA) navigations but resets on
+// a full page reload. So the entrance animation plays only on first load, not
+// when returning to home via in-app navigation (e.g. back from a writing post).
+let hasAnimated = false;
+
 export default function AboutContent({ symbolPath }) {
   const reduce = useReducedMotion();
 
+  // Captured once at mount so the value is stable for this mount's lifetime.
+  const [animateOnLoad] = useState(() => !hasAnimated);
+  useEffect(() => {
+    hasAnimated = true;
+  }, []);
+
+  // Skip the entrance choreography when reduced motion is requested or this is
+  // a revisit — render everything in its final, settled state.
+  const skipAnimation = reduce || !animateOnLoad;
+
   // Each content block rises into place. Index drives the 300ms cascade.
   const rise = (index) =>
-    reduce
+    skipAnimation
       ? {}
       : {
           initial: { opacity: 0, y: 12 },
@@ -55,7 +71,7 @@ export default function AboutContent({ symbolPath }) {
         <section className="about_intro">
           <div className="about_title">
             <span className="about_symbol" role="img" aria-label="Praveen Suhag">
-              <PencilSymbol d={symbolPath} reduce={reduce} />
+              <PencilSymbol d={symbolPath} reduce={skipAnimation} />
             </span>
             <motion.p className="about_name about_name_lg" {...rise(0)}>
               Praveen Suhag.
@@ -106,16 +122,25 @@ export default function AboutContent({ symbolPath }) {
         </motion.section>
 
         <motion.section className="about_writing" {...rise(2)}>
-          <p className="about_work_label">Writing</p>
+          <p className="about_work_label">Writing.</p>
           <div className="about_writing_list">
-            {writing.map((item) => (
-              <div className="about_writing_tile" key={item.title}>
+            {writing.map((item) => {
+              const row = (
                 <div className="about_writing_row">
                   <p className="about_writing_title">{item.title}</p>
                   <p className="about_writing_date">{item.date}</p>
                 </div>
-              </div>
-            ))}
+              );
+              return item.href ? (
+                <Link className="about_writing_tile" key={item.title} href={item.href}>
+                  {row}
+                </Link>
+              ) : (
+                <div className="about_writing_tile" key={item.title}>
+                  {row}
+                </div>
+              );
+            })}
           </div>
         </motion.section>
 
